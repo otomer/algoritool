@@ -1,3 +1,10 @@
+const { toObject } = require("./array/conversion/toObject");
+const { empty } = require("./array/manipulation/empty");
+
+const repeat = (str, times) => new Array(times + 1).join(str);
+
+const removeDuplicates = arr => Array.from(new Set(arr));
+
 const cloneArray = arr => [].concat(arr);
 
 const createSequence = (len, from = 0) =>
@@ -20,6 +27,14 @@ const sortByAttribute = (arr, attr, asc = true) =>
   arr.sort((a, b) => (a[attr] > b[attr] ? (asc ? -1 : 1) : asc ? 1 : -1));
 
 module.exports = {
+  ArrayConversion: {
+    toObject
+  },
+  ArrayManipulation: {
+    empty
+  },
+  removeDuplicates,
+  repeat,
   cloneArray,
   createSequence,
   chunkArray,
