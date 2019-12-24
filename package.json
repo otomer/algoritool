@@ -1,0 +1,21 @@
+{
+  "name": "algoritool",
+  "version": "0.1.0",
+  "description": "Algorithm tools",
+  "license": "MIT",
+  "repository": "otomer/algoritool",
+  "main": "index.js",
+  "keywords": [
+    "algoritool",
+    "npm",
+    "package",
+    "algoirthm",
+    "tools",
+    "array",
+    "random",
+    "manipulate"
+  ],
+  "dependencies": {
+    "user": "0.0.0"
+  }
+}
