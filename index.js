@@ -1,4 +1,4 @@
-const toObject = require("./array/conversion/toObject");
+const { toObject } = require("./array/conversion/toObject");
 const { empty } = require("./array/manipulation/empty");
 
 const repeat = (str, times) => new Array(times + 1).join(str);

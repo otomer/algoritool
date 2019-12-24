@@ -1,5 +1,5 @@
 module.exports = {
-  arrayToObject: arr => {
+  toObject: arr => {
     return { ...arr };
   }
 };
