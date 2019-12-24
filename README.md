@@ -5,8 +5,7 @@
 algoritool - tech tools for algorithm design
 </h2>
 
-[![npm](https://img.shields.io/npm/v/algoritool.svg)](https://www.npmjs.com/package/algoritool)
-[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/algoritool.svg)](https://www.npmjs.com/package/algoritool)
+[![npm](https://img.shields.io/npm/v/algoritool.svg)](https://www.npmjs.com/package/algoritool) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/algoritool.svg)](https://www.npmjs.com/package/algoritool) [![npm dependents](https://badgen.net/npm/dependents/algoritool)](https://www.npmjs.com/package/algoritool?activeTab=dependents) [![Downloads](https://badgen.net/npm/dt/algoritool)](https://www.npmjs.com/package/algoritool)
 
 ---
 
