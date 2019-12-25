@@ -13,7 +13,7 @@ algoritool - tech tools for algorithm design
 
 ## Introduction
 
-TBD
+Algorithm Tools are useful small algorithms packaged in a way that make it easy to re-use them in other Algorithms.
 
 ## Install
 
@@ -23,15 +23,52 @@ $ npm install algoritool
 
 ## Usage
 
-```
+```javascript
 const algoritool = require("algoritool");
+
+// Specific example:
+const { ArrayManipulation } = require("algoritool");
+const mySort = array => ArrayManipulation.clone(array).sort();
 ```
 
 ---
 
 ## Methods
 
-1. `cloneArray: (arr: any) => any[]`
-2. `createSequence: (len: any, from?: number) => number[]`
-3. `chunkArray: (arr: any, chunkSize: any) => any[]`
-4. `sortByAttribute: (arr: any, attr: any, asc?: boolean) => any`
+#### Array Creation
+
+```typescript
+sequence: (len: any, from?: number) => number[]
+```
+
+#### Array Conversion
+
+```typescript
+toObject: (arr: any) => any;
+```
+
+#### Array Manipulation
+
+```typescript
+chunksSplit: (arr: any, chunkSize: any) => any[]
+clone: (arr: any) => any[]
+empty: (arr: any) => any
+permutations: (alphabets: any, startIndex: any, endIndex: any) => any
+removeDuplicates: (arr: any) => any[]
+```
+
+#### Array Sorting
+
+```typescript
+byAttribute: (arr: any, attr: any, asc?: boolean) => any;
+```
+
+#### String Manipulation
+
+```typescript
+repeat: (str: any, times: any) => string;
+```
+
+---
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/otomer/algoritool)
