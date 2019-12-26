@@ -53,7 +53,7 @@ toObject: (arr: any) => any;
 chunksSplit: (arr: any, chunkSize: any) => any[]
 clone: (arr: any) => any[]
 empty: (arr: any) => any
-permutations: (alphabets: any, startIndex: any, endIndex: any) => any
+permutations: (arr: any) => any
 removeDuplicates: (arr: any) => any[]
 ```
 
@@ -61,6 +61,12 @@ removeDuplicates: (arr: any) => any[]
 
 ```typescript
 byAttribute: (arr: any, attr: any, asc?: boolean) => any;
+```
+
+#### Array Validation
+
+```typescript
+isArray: (value: any) => boolean;
 ```
 
 #### String Manipulation
