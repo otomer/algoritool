@@ -6,7 +6,9 @@ const { clone } = require("./array/manipulation/clone");
 const { repeat } = require("./string/manipulation/repeat");
 const { chunksSplit } = require("./array/manipulation/chunksSplit");
 const { permutations } = require("./array/manipulation/permutations");
+const { shuffle } = require("./array/manipulation/shuffle");
 const { byAttribute } = require("./array/sorting/byAttribute");
+const { isArray } = require("./array/validation/isArray");
 
 module.exports = {
   ArrayCreation: {
@@ -20,10 +22,14 @@ module.exports = {
     clone,
     empty,
     permutations,
-    removeDuplicates
+    removeDuplicates,
+    shuffle
   },
   ArraySorting: {
     byAttribute
+  },
+  ArrayValidation: {
+    isArray
   },
   StringManipulation: {
     repeat

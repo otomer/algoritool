@@ -55,6 +55,7 @@ clone: (arr: any) => any[]
 empty: (arr: any) => any
 permutations: (arr: any) => any
 removeDuplicates: (arr: any) => any[]
+shuffle: (arr: any) => any[]
 ```
 
 #### Array Sorting

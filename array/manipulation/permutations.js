@@ -7,18 +7,19 @@ const swap = (arr, index1, index2) => {
 
 // Time Complexity: O (n*n!)
 function permute(arr, startIndex, endIndex) {
-  let arr = [];
+  let permutedArray = [];
   if (startIndex === endIndex) {
     return arr.join("");
   } else {
-    var i;
-    for (i = startIndex; i <= endIndex; i++) {
+    for (let i = startIndex; i <= endIndex; i++) {
       swap(arr, startIndex, i);
-      arr = arr.concat(permute(arr, startIndex + 1, endIndex));
+      permutedArray = permutedArray.concat(
+        permute(arr, startIndex + 1, endIndex)
+      );
       swap(arr, i, startIndex); // backtrack
     }
   }
-  return arr;
+  return permutedArray;
 }
 
 function permutations(arr) {
