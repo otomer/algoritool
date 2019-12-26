@@ -1,23 +1,30 @@
-const swap = (alphabets, index1, index2) => {
-  var temp = alphabets[index1];
-  alphabets[index1] = alphabets[index2];
-  alphabets[index2] = temp;
-  return alphabets;
+const swap = (arr, index1, index2) => {
+  var temp = arr[index1];
+  arr[index1] = arr[index2];
+  arr[index2] = temp;
+  return arr;
 };
 
-module.exports = {
-  permutations: (alphabets, startIndex, endIndex) => {
-    let arr = [];
-    if (startIndex === endIndex) {
-      return alphabets.join("");
-    } else {
-      var i;
-      for (i = startIndex; i <= endIndex; i++) {
-        swap(alphabets, startIndex, i);
-        arr = arr.concat(permutations(alphabets, startIndex + 1, endIndex));
-        swap(alphabets, i, startIndex); // backtrack
-      }
+// Time Complexity: O (n*n!)
+function permute(arr, startIndex, endIndex) {
+  let arr = [];
+  if (startIndex === endIndex) {
+    return arr.join("");
+  } else {
+    var i;
+    for (i = startIndex; i <= endIndex; i++) {
+      swap(arr, startIndex, i);
+      arr = arr.concat(permute(arr, startIndex + 1, endIndex));
+      swap(arr, i, startIndex); // backtrack
     }
-    return arr;
   }
+  return arr;
+}
+
+function permutations(arr) {
+  return permute(arr, 0, arr.length - 1);
+}
+
+module.exports = {
+  permutations
 };

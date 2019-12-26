@@ -1,3 +1,7 @@
+function clone(arr) {
+  return [].concat(arr);
+}
+
 module.exports = {
-  clone: arr => [].concat(arr)
+  clone
 };

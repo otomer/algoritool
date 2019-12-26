@@ -1,5 +1,7 @@
+function toObject(arr) {
+  return { ...arr };
+}
+
 module.exports = {
-  toObject: arr => {
-    return { ...arr };
-  }
+  toObject
 };

@@ -1,7 +1,8 @@
+function empty(arr) {
+  arr.length = 0;
+  return arr;
+}
+
 module.exports = {
-  empty: arr => {
-    // set the array’s length to 0.
-    arr.length = 0;
-    return arr;
-  }
+  empty
 };
